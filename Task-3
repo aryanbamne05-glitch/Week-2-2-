@@ -1,0 +1,29 @@
+ Task 3 – Combine map(), filter(), reduce()
+const scores = [45, 80, 90, 35, 60, 75];
+// Filter passing scores (>=50)
+// Add 10 bonus marks to each
+// Calculate total using reduce()
+
+Code:
+
+const scores = [45, 80, 90, 35, 60, 75];
+
+// Filter passing scores
+const passed = scores.filter(s => s >= 50);
+
+// Add 10 bonus marks
+const bonusScores = passed.map(s => s + 10);
+
+// Calculate total
+const totalScore = bonusScores.reduce((sum, s) => sum + s, 0);
+
+console.log("Passed Scores:", passed);
+console.log("After Bonus:", bonusScores);
+console.log("Total Score:", totalScore);
+
+Output:-
+
+Passed Scores: [80, 90, 60, 75]
+After Bonus: [90, 100, 70, 85]
+Total Score: 345
+
