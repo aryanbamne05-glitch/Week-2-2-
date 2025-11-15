@@ -1,0 +1,25 @@
+– Data Transformation with map() and filter()
+const prices = [120, 250, 300, 450, 600];
+// 1. Filter prices greater than 250
+// 2. Apply 10% discount to filtered prices using map()
+// 3. Log both original and discounted arrays
+
+
+ const prices = [120, 250, 300, 450, 600];
+
+// 1. Filter prices greater than 250
+const filtered = prices.filter(p => p > 250);
+
+// 2. Apply 10% discount
+const discounted = filtered.map(p => p * 0.9);
+
+// 3. Log results
+console.log("Original Prices:", prices);
+console.log("Filtered Prices:", filtered);
+console.log("Discounted Prices:", discounted);
+
+ Output :-
+
+Original Prices: [120, 250, 300, 450, 600]
+Filtered Prices: [300, 450, 600]
+Discounted Prices: [270, 405, 540]
